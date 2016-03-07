@@ -21,10 +21,23 @@ time, mark, audio, video {
 }
 /* Styles for Product Page Customization */
 /* NOTE: Do not edit the Bootstrap CSS files. */
-
+#main-content {
+	padding: 20px;
+}
+header {
+	border-bottom: 1px solid black;
+}
+#overview {
+	border-bottom: 1px solid black;
+}
 #product {
 	height: 400px;
 	background-color: gray;
+	border-bottom: 1px solid black;
+}
+footer {
+	height: 100px;
+	background-color: red;
 }
 /*Styles for Product Description Tabs*/
 .tabs-menu {
