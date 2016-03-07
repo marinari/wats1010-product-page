@@ -35,49 +35,47 @@
         <header role="banner">
             <h1>The API Superstore</h1>
             <h2>Click, Click, Code!</h2>
-            <ul>
+            <ul>Share this Page
                 <li><a href="www.facebook.com">Insert FB Icon here</a></li>
                 <li><a href="www.twitter.com">Insert Twitter Icon here</a></li>
                 <li><a href="www.instagram.com">Google Plus</a></li>
             </ul>
         </header>
 
-        <section id="main-content" role="main">
+        <div id="main-content" role="main">
             <section id="overview" role="article">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/L48g1ZWLMdo" frameborder="0" allowfullscreen></iframe>
+                <iframe height="340" src="https://www.youtube.com/embed/L48g1ZWLMdo" frameborder="0" allowfullscreen></iframe>
                 <p>The API Superstore provides a catalog of third­party APIs that you can use to enhance your business. From e­commerce to maps, API Superstore lists all of the services that customers expect and saves you the headache of sorting it out yourself! The longer you wait, the longer you’re not making more money and happier users!</p>
             </section>
+
             <section id="product">
                 <section id="features" role="article">
+
                     <h2>Product Features</h2>
-                    <div id="tabs-container">
-                        <ul class="tabs-menu">
-                            <li class="current"><a href="#tab-1">Feature 1</a></li>
-                            <li><a href="#tab-2">Feature 2</a></li>
-                            <li><a href="#tab-3">Feature 3</a></li>
-                            <li><a href="#tab-4">Feature 4</a></li>
-                        </ul>
-                        <div class="tab">
-                            <div id="tab-1" class="tab-content">
-                                <p>Links to the best APIs from all over the web</p>
-                            </div>
-                            <div id="tab-2" class="tab-content">
-                                <p>Pay with credit, check, IOU, wire transfer, PayPal, or livestock trade!</p>
-                            </div>
-                            <div id="tab-3" class="tab-content">
-                                <p>Convenient catalog</p>
-                            </div>
-                            <div id="tab-4" class="tab-content">
-                                <p>Elegant shopping experience</p>
-                            </div>
+                    <article id="tab-box">
+                        <div tabindex="0" class="tab-content">
+                            <button>Feature 1</button>
+                            <p class="ontab">Links to the best APIs from all over the web</p>
                         </div>
-                    </div>
+                        <div tabindex="0" class="tab-content">
+                            <button>Feature 2</button>
+                            <p class="ontab">Pay with credit, check, IOU, wire transfer, PayPal, or livestock trade!</p>
+                        </div>
+                        <div tabindex="0" class="tab-content">
+                            <button>Feature 3</button>
+                            <p class="ontab">Convenient catalog</p>
+                        </div>
+                        <div tabindex="0" class="tab-content">
+                            <button>Feature 4</button>
+                            <p class="ontab">Elegant shopping experience</p>
+                        </div>
+                    </article>
                 </section>
 
                 <section id="reviews" role="article">
                     <h2>Customer Reviews</h2>
                     <p>Insert carosel of reviews here</p>
-                    <a href="#">Purchase Here</a>
+                    <button>Sign Up</button>
                     <!--alternative code for rating div
                     <div class="rating">
                     <span class="rating5">&#x2606;</span>
@@ -86,26 +84,25 @@
                     <span class="rating2">&#x2606;</span>
                     <span class="rating1">&#x2606;</span>
                     </div>-->
-                    <p>Rate This Product:
-                    <span class="starRating">
-                        <input id="rating5" type="radio" name="rating" value="5">
-                        <label for="rating5">5</label>
-                        <input id="rating4" type="radio" name="rating" value="4">
-                        <label for="rating4">4</label>
-                        <input id="rating3" type="radio" name="rating" value="3">
-                        <label for="rating3">3</label>
-                        <input id="rating2" type="radio" name="rating" value="2">
-                        <label for="rating2">2</label>
-                        <input id="rating1" type="radio" name="rating" value="1" checked>
-                        <label for="rating1">1</label>
-                    </span>
-                    </p>
-
+                    <div id="rate-box">Rate This Product:
+                        <span class="starRating">
+                            <input id="rating5" type="radio" name="rating" value="5">
+                            <label for="rating5">5</label>
+                            <input id="rating4" type="radio" name="rating" value="4">
+                            <label for="rating4">4</label>
+                            <input id="rating3" type="radio" name="rating" value="3">
+                            <label for="rating3">3</label>
+                            <input id="rating2" type="radio" name="rating" value="2">
+                            <label for="rating2">2</label>
+                            <input id="rating1" type="radio" name="rating" value="1" checked>
+                            <label for="rating1">1</label>
+                        </span>
+                    </div>
                 </section>
         
             </section>
 
-        </section>
+        </div>
 
 
         <footer>
@@ -123,24 +120,12 @@
                 <li>Seattle, WA, USA</li>
             </ul>
             <ul>
-                <li><a href="#">Github Proj link</a></li>
+                <li><a href="https://github.com/marinari/wats1010-product-page">Github Proj link</a></li>
                 <li><a href="#">Share this on FB</a></li>
                 <li><a href="#">Share this on G+</a></li>
             </ul>
         </footer>
 
-    <script type="text/javascript">
-        $(document).ready(function() {
-        $(".tabs-menu a").click(function(event) {
-        event.preventDefault();
-        $(this).parent().addClass("current");
-        $(this).parent().siblings().removeClass("current");
-        var tab = $(this).attr("href");
-        $(".tab-content").not(tab).css("display", "none");
-        $(tab).fadeIn();
-    });
-});
-    </script>
 
     </body>
 </html>
