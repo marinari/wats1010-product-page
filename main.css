@@ -168,7 +168,7 @@ footer svg path {
   text-align: center;
   transition: .25s ease;
   border: none;
-  padding: 12px;
+  padding: 14px;
 }
 
 .tab-content:focus button,
@@ -176,25 +176,32 @@ button:focus {
   background-color: #8DA1BF;
   outline: none;
 }
+.ontab img {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 button:focus + p.ontab,
 .tab-content:focus P.ontab {
   display: block;
   position: absolute;
   background-color: #189E8A;
-  height: 120px;
+  height: 150px;
   width: 100%;
   left: 0;
   z-index: 2;
   outline: none;
   top: 0px;
   text-align: center;
-  padding-top: 48px;
+  padding-top: 30px;
 }
 
 p.ontab {
   display: none;
   margin-top: 38px;
+  color: #2B2B2B;
 }
 
 .tab-content {
