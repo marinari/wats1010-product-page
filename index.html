@@ -39,11 +39,11 @@
     </head>
     <body>
         <header role="banner">
-            <div class="h-left">
+            <div class="s-left">
                 <h1>The API Superstore</h1>
                 <h2>Click, Click, Code!</h2>
             </div>
-            <div class="h-right">
+            <div class="s-right">
                 <ul>Share this Page
                     <li><a href="www.facebook.com">FB icon</a></li>
                     <li><a href="www.twitter.com">Twitter icon</a></li>
@@ -54,14 +54,20 @@
 
         <div id="main-content" role="main">
             <section id="overview" role="article">
-                <iframe height="340" src="https://www.youtube.com/embed/L48g1ZWLMdo" frameborder="0" allowfullscreen></iframe>
-                <p>The API Superstore provides a catalog of third­party APIs that you can use to enhance your business. From e­commerce to maps, API Superstore lists all of the services that customers expect and saves you the headache of sorting it out yourself! The longer you wait, the longer you’re not making more money and happier users!</p>
+                <div class="s-left">
+                    <h1>Product Overview</h1>
+                    <iframe height="340" src="https://www.youtube.com/embed/L48g1ZWLMdo" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="s-right">
+                    <p>The API Superstore provides a catalog of third­party APIs that you can use to enhance your business. From e­commerce to maps, API Superstore lists all of the services that customers expect and saves you the headache of sorting it out yourself! The longer you wait, the longer you’re not making more money and happier users!</p>
+                </div>
             </section>
 
             <section id="product">
-                <section id="features" role="article">
+                <div class="s-left" role="article">
 
                     <h2>Product Features</h2>
+                    <a href="#">Sign Up</a>
                     <article id="tab-box">
                         <div tabindex="0" class="tab-content">
                             <button>Feature 1</button>
@@ -80,9 +86,9 @@
                             <p class="ontab">Elegant shopping experience</p>
                         </div>
                     </article>
-                </section>
+                </div>
 
-                <section id="reviews" role="article">
+                <div class="s-right" role="article">
                     <h2>Customer Reviews</h2>
                         <div id="slides">
                             <p>“This is the best website ever!” ­­ C.P. Yu, AmazingSite.com</p>
@@ -90,7 +96,7 @@
                             <p>“Once again, I’m blown away by the amazing offerings of the API Superstore. You really are SUPER!” ­­ Clara Cache,</p>
                             <!--<img src="http://placehold.it/940x528">-->
                         </div>
-                    <button>Sign Up</button>
+                    
                     <!--alternative code for rating div
                     <div class="rating">
                     <span class="rating5">&#x2606;</span>
@@ -115,7 +121,7 @@
                     </div>
                 </section>
         
-            </section>
+            </div>
 
         </div>
 
@@ -135,6 +141,7 @@
                 <ul>
                     <li>Phone: 206:555:1234</li>
                     <li>Email: info@apisuperstore.com</li>
+                    <li>100 Spring St West</li>
                     <li>Seattle, WA, USA</li>
                 </ul>
             </div>
@@ -146,7 +153,6 @@
                 </ul>
             </div>
         </footer>
-
 
     </body>
 </html>
