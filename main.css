@@ -38,9 +38,11 @@ header ul li {
 }
 h1 {
 	font-size: 200%;
+	padding-bottom: 5px;
 }
 h2 {
 	font-size: 150%;
+	padding-bottom: 5px;
 }
 a:link {
     color: #22DEC2;
@@ -67,7 +69,7 @@ a:active {
 }
 .s-right {
 	width: 50%;
-	padding-left: 10px;
+	padding-left: 15px;
 }
 
 li {
@@ -75,7 +77,7 @@ li {
 }
 
 section {
-	padding: 20px;
+	padding: 30px;
 	height: 450px;
 }
 #overview {
@@ -99,7 +101,7 @@ footer {
 	padding: 20px;
 	background: url(assets/rubber_grip.png);
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 #f-left, #f-center, #f-right {
@@ -107,6 +109,13 @@ footer {
 }
 .slidesjs-pagination-item {
 	display: inline;
+}
+#slides {
+	background-color: #189E8A;
+}
+#slides p {
+	text-align: center;
+	padding: 40px;
 }
 footer .links li {
 	display: inline;
@@ -226,6 +235,7 @@ p.ontab {
   opacity : 1;
 }
 
+/*responsive styles for screens half of size*/
 @media (max-width: 504px){
 
 html {
@@ -236,6 +246,10 @@ header, #product, #overview, footer{
 	width: 504px;
 	display: flex;
 	flex-flow: row wrap;
+	}
+
+	#product {
+		flex-flow: row-reverse wrap;
 	}
 
 	section {
