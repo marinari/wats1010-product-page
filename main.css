@@ -59,17 +59,17 @@ a:link {
 }
 
 /* visited link */
-a:visited {
+a:visited {  /*light cyan*/
     color: #22DEC2;
 }
 
 /* mouse over link */
-a:hover {
+a:hover { /*yellow*/
     color: #ffCE30;
 }
 
 /* selected link */
-a:active {
+a:active { /*soft yellow*/
     color: #FFD858;
 }
 .s-left {
