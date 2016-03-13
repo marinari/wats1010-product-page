@@ -24,6 +24,7 @@ time, mark, audio, video {
 
 body {
 	color: #D1D6DB;
+	font-family: 'Poppins', sans-serif;
 }
 header {
 	width: 100%;
@@ -45,13 +46,12 @@ header svg path {
 }
 h1 {
 	font-size: 200%;
-	padding-bottom: 5px;
-	font-family: 'Sarala', sans-serif;
+	font-family: 'Rubik', sans-serif;
+	color: #FFD858;
 }
 h2 {
 	font-size: 150%;
-	padding-bottom: 5px;
-	font-family: 'Sarala', sans-serif;
+	font-family: 'Rubik', sans-serif;
 }
 a:link {
     color: #22DEC2;
